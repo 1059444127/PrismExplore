@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:viewModel="clr-namespace:EventAggregationExplore.ViewModel"
+                    xmlns:view="clr-namespace:EventAggregationExplore.View">
+
+    <DataTemplate DataType="{x:Type viewModel:SubjectViewModel}">
+        <view:SubjectView />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type viewModel:ObserverViewModel}">
+        <view:ObserverView />
+    </DataTemplate>
+
+</ResourceDictionary>
