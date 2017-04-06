@@ -43,6 +43,8 @@ namespace EventAggregationExplore.ViewModel
             ////}
 
             SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<SubjectViewModel>();
+            SimpleIoc.Default.Register<ObserverViewModel>();
         }
 
         public MainViewModel Main
@@ -52,7 +54,24 @@ namespace EventAggregationExplore.ViewModel
                 return ServiceLocator.Current.GetInstance<MainViewModel>();
             }
         }
-        
+
+        public SubjectViewModel Subject
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<SubjectViewModel>();
+            }
+        }
+
+        public ObserverViewModel Observer
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<ObserverViewModel>();
+            }
+        }
+
+
         public static void Cleanup()
         {
             // TODO Clear the ViewModels
