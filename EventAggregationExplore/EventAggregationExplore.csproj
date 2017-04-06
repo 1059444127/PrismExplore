@@ -83,6 +83,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\ObserverViewModel.cs" />
+    <Compile Include="ViewModel\SubjectViewModel.cs" />
     <Compile Include="View\ObserverView.xaml.cs">
       <DependentUpon>ObserverView.xaml</DependentUpon>
     </Compile>
