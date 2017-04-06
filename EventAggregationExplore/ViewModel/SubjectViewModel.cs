@@ -1,12 +1,17 @@
 ﻿using System.Windows;
 using System.Windows.Input;
+using EventAggregationExplore.Event;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using Microsoft.Practices.Prism.Events;
+using Microsoft.Practices.ServiceLocation;
 
 namespace EventAggregationExplore.ViewModel
 {
     public class SubjectViewModel : ViewModelBase
     {
+        private readonly IEventAggregator _eventAggregator = ServiceLocator.Current.GetInstance<EventAggregator>();
+
         #region [--LeftLabelCommand--]
 
         private ICommand _leftLabelCommand;
@@ -18,8 +23,7 @@ namespace EventAggregationExplore.ViewModel
 
         private void OnLeftLabelPicked()
         {
-            // TODO: Send out Event
-            MessageBox.Show("L");
+            _eventAggregator.GetEvent<UIElementActivityEvent>().Publish("LeftLabelButton Clicked");
         }
 
         #endregion [--LeftLabelCommand--]    
@@ -36,8 +40,7 @@ namespace EventAggregationExplore.ViewModel
 
         private void OnRightLabelPicked()
         {
-            // TODO: Send out Event
-            MessageBox.Show("R");           
+            _eventAggregator.GetEvent<UIElementActivityEvent>().Publish("RightLabelButton Clicked");
         }
 
         #endregion [--RightLabelCommand--]    

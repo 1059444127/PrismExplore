@@ -83,6 +83,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Event\UIElementActivityEvent.cs" />
     <Compile Include="ViewModel\ObserverViewModel.cs" />
     <Compile Include="ViewModel\SubjectViewModel.cs" />
     <Compile Include="View\ObserverView.xaml.cs">

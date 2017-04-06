@@ -14,6 +14,7 @@
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
+using Microsoft.Practices.Prism.Events;
 using Microsoft.Practices.ServiceLocation;
 
 namespace EventAggregationExplore.ViewModel
@@ -45,6 +46,7 @@ namespace EventAggregationExplore.ViewModel
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<SubjectViewModel>();
             SimpleIoc.Default.Register<ObserverViewModel>();
+            SimpleIoc.Default.Register<EventAggregator>();
         }
 
         public MainViewModel Main
