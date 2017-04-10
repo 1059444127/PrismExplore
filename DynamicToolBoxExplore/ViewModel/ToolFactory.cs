@@ -7,6 +7,7 @@ namespace DynamicToolBoxExplore.ViewModel
     {
         public static IEnumerable<ToolViewModel> CreateToolsAccordingTo(string configFilePath)
         {
+            //TODO: parse configFilePath, create ToolViewModels  using reflection
             throw new NotImplementedException();
         }
     }
