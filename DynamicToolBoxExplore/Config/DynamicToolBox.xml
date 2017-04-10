@@ -2,6 +2,6 @@
 
 <DynamicToolBox>
   <LLabel Available="true"/>
-  <MLable Available="false"/>
+  <MLabel Available="false"/>
   <RLabel Available="true"/>
 </DynamicToolBox>
