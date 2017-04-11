@@ -30,7 +30,7 @@ namespace DynamicToolBoxExplore.ViewModel
             ////{
             ////    // Code runs "for real"
             ////}
-            Tools = new ObservableCollection<ToolViewModel>(ToolFactory.CreateToolsAccordingTo(@"Config/DynamicToolBox.xml"));
+            Tools = new ObservableCollection<ToolViewModel>(ToolFactory.CreateToolsAccordingTo(@"c:/config/DynamicToolBox.xml"));
         }
 
         public ObservableCollection<ToolViewModel> Tools { get; private set; } 
