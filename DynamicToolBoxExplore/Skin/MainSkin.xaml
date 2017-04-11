@@ -2,6 +2,6 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:viewModel="clr-namespace:DynamicToolBoxExplore.ViewModel">
     <DataTemplate DataType="{x:Type viewModel:ToolViewModel}">
-        <Button></Button>
+        <Button Content="{Binding Name}"></Button>
     </DataTemplate>
 </ResourceDictionary>
