@@ -12,8 +12,6 @@ namespace DynamicToolBoxExplore.ViewModel
             var xDoc = XDocument.Load(configFilePath);
             foreach (var e in xDoc.Descendants())
             {
-                //TODO-Later: ToolFactory.CreateToolsAccordingTo  Remove hard code.
-
                 // if e.Availabel == false , continue;
                 var availableAttribute = e.GetAttribute("Available");
                 bool available = true;
@@ -21,7 +19,7 @@ namespace DynamicToolBoxExplore.ViewModel
                 if(!available) continue;
 
                 // Create ToolViewModel use reflection
-                var toolViewModelType = Type.GetType("DynamicToolBoxExplore.ViewModel." + e.Name + "ViewModel");
+                var toolViewModelType = Type.GetType(typeof(ToolFactory).Namespace + "." + e.Name + "ViewModel");
                 if(toolViewModelType == null) continue;
                 yield return (ToolViewModel)Activator.CreateInstance(toolViewModelType);
             }
