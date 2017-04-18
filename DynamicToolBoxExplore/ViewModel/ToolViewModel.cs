@@ -35,7 +35,7 @@ namespace DynamicToolBoxExplore.ViewModel
 
     }
 
-    class RLabelViewModel : ToolViewModel
+    class RLabelViewModel : SingleToolViewModel
     {
         #region Overrides of ToolViewModel
 
@@ -44,15 +44,10 @@ namespace DynamicToolBoxExplore.ViewModel
             get { return "R"; }
         }
 
-        protected override void OnClicked()
-        {
-            MessageBox.Show("RLabel Picked");
-        }
-
         #endregion
     }
 
-    class MLabelViewModel : ToolViewModel
+    class MLabelViewModel : SingleToolViewModel
     {
         #region Overrides of ToolViewModel
 
@@ -61,26 +56,16 @@ namespace DynamicToolBoxExplore.ViewModel
             get { return "M"; }
         }
 
-        protected override void OnClicked()
-        {
-            MessageBox.Show("MLabel Picked");
-        }
-
         #endregion
     }
 
-    class LLabelViewModel : ToolViewModel
+    class LLabelViewModel : SingleToolViewModel
     {
         #region Overrides of ToolViewModel
 
         public override string Name
         {
             get { return "L"; }
-        }
-
-        protected override void OnClicked()
-        {
-            MessageBox.Show("LLabel Picked");
         }
 
         #endregion
