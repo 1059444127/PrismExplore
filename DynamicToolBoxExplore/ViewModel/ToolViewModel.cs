@@ -25,6 +25,14 @@ namespace DynamicToolBoxExplore.ViewModel
 
     }
 
+    public abstract class SingleToolViewModel : ToolViewModel
+    {
+        protected override void OnClicked()
+        {
+            MessageBox.Show(string.Format("{0}Label Picked", Name));
+        }
+    }
+
     class RLabelViewModel : ToolViewModel
     {
         #region Overrides of ToolViewModel
