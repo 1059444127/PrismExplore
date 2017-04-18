@@ -4,4 +4,7 @@
     <DataTemplate DataType="{x:Type viewModel:SingleToolViewModel}">
         <Button Content="{Binding Name}" Command="{Binding ToolCommand}"></Button>
     </DataTemplate>
+    <DataTemplate DataType="{x:Type viewModel:GroupToolViewModel}">
+        <ComboBox ItemsSource="{Binding Tools}"></ComboBox>
+    </DataTemplate>
 </ResourceDictionary>
