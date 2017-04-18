@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Input;
 using GalaSoft.MvvmLight;
@@ -56,7 +57,24 @@ namespace DynamicToolBoxExplore.ViewModel
 
     public class GroupToolViewModel : ToolViewModel
     {
+        private string _name;
 
+        public GroupToolViewModel(string name)
+        {
+            _name = name;
+            Tools = new ObservableCollection<ToolViewModel>();
+        }
+
+        public ObservableCollection<ToolViewModel> Tools { get; private set; }
+
+        #region Overrides of ToolViewModel
+
+        public override string Name
+        {
+            get { return _name; }
+        }
+
+        #endregion
     }
 
 
