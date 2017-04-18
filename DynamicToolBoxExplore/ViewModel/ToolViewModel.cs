@@ -33,6 +33,11 @@ namespace DynamicToolBoxExplore.ViewModel
         }
     }
 
+    public class GroupToolViewModel : ToolViewModel
+    {
+        //TODO; Move ToolViewModel.ToolCommand Downto SingleToolViewModel
+    }
+
     class RLabelViewModel : ToolViewModel
     {
         #region Overrides of ToolViewModel
