@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
-<DynamicToolBox>
+<DynamicToolBox >
   <LLabel Available="true"/>
   <MLabel Available="false"/>
   <RLabel Available="true"/>
+  <UpLabel Group="A" Available="true"/>
+  <DownLabel Group="A" Available="true"/>
 </DynamicToolBox>
