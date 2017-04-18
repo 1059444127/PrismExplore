@@ -30,10 +30,35 @@ namespace DynamicToolBoxExplore.ViewModel
         }
     }
 
+    class DownLabelToolViewModel : SingleToolViewModel
+    {
+        #region Overrides of ToolViewModel
+
+        public override string Name
+        {
+            get { return "Down"; }
+        }
+
+        #endregion
+    }
+
+    class UpLabelToolViewModle : SingleToolViewModel
+    {
+        #region Overrides of ToolViewModel
+
+        public override string Name
+        {
+            get { return "Up"; }
+        }
+
+        #endregion
+    }
+
     public class GroupToolViewModel : ToolViewModel
     {
 
     }
+
 
     class RLabelViewModel : SingleToolViewModel
     {
