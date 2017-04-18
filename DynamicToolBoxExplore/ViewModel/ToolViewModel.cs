@@ -31,7 +31,7 @@ namespace DynamicToolBoxExplore.ViewModel
         }
     }
 
-    class DownLabelToolViewModel : SingleToolViewModel
+    class DownLabelViewModel : SingleToolViewModel
     {
         #region Overrides of ToolViewModel
 
@@ -43,7 +43,7 @@ namespace DynamicToolBoxExplore.ViewModel
         #endregion
     }
 
-    class UpLabelToolViewModle : SingleToolViewModel
+    class UpLabelViewModel : SingleToolViewModel
     {
         #region Overrides of ToolViewModel
 

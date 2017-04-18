@@ -10,6 +10,9 @@ namespace DynamicToolBoxExplore.ViewModel
         public static IEnumerable<ToolViewModel> CreateToolsAccordingTo(string configFilePath)
         {
             var xDoc = XDocument.Load(configFilePath);
+
+            var groupViewModelDictionary = new Dictionary<string, GroupToolViewModel>();
+
             foreach (var e in xDoc.Descendants())
             {
                 // if e.Availabel == false , continue;
@@ -21,7 +24,23 @@ namespace DynamicToolBoxExplore.ViewModel
                 // Create ToolViewModel use reflection
                 var toolViewModelType = Type.GetType(typeof(ToolFactory).Namespace + "." + e.Name + "ViewModel");
                 if(toolViewModelType == null) continue;
-                yield return (ToolViewModel)Activator.CreateInstance(toolViewModelType);
+                var toolViewModel = (ToolViewModel)Activator.CreateInstance(toolViewModelType);
+
+                // Set Tool Group
+                var groupName = e.GetAttribute("Group");
+                if(string.IsNullOrWhiteSpace(groupName))
+                    yield return toolViewModel;
+                else if (groupViewModelDictionary.ContainsKey(groupName))
+                {
+                    groupViewModelDictionary[groupName].Tools.Add(toolViewModel);
+                }
+                else
+                {
+                    var groupViewModel = new GroupToolViewModel(groupName);
+                    groupViewModel.Tools.Add(toolViewModel);
+                    groupViewModelDictionary[groupName] = groupViewModel;
+                    yield return groupViewModel;
+                }
             }
         }
     }
