@@ -9,7 +9,10 @@ namespace DynamicToolBoxExplore.ViewModel
     public abstract class ToolViewModel : ViewModelBase
     {
         public abstract string Name { get; }
+    }
 
+    public abstract class SingleToolViewModel : ToolViewModel
+    {
         #region [--ToolCommand--]
 
         private ICommand _toolCommand;
@@ -19,15 +22,9 @@ namespace DynamicToolBoxExplore.ViewModel
             get { return _toolCommand = _toolCommand ?? new RelayCommand(OnClicked); }
         }
 
-        protected abstract void OnClicked();
-
-        #endregion [--ToolCommand--]    
-
-    }
-
-    public abstract class SingleToolViewModel : ToolViewModel
-    {
-        protected override void OnClicked()
+        #endregion [--ToolCommand--]  
+        
+        protected virtual void OnClicked()
         {
             MessageBox.Show(string.Format("{0}Label Picked", Name));
         }
@@ -35,7 +32,7 @@ namespace DynamicToolBoxExplore.ViewModel
 
     public class GroupToolViewModel : ToolViewModel
     {
-        //TODO; Move ToolViewModel.ToolCommand Downto SingleToolViewModel
+
     }
 
     class RLabelViewModel : ToolViewModel
