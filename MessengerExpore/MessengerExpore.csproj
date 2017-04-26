@@ -85,6 +85,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Skin\MainSkin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -110,6 +114,16 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MessengerControlPanel\MessengerControlPanel.csproj">
+      <Project>{0C0F05C3-755F-419E-A938-2D51FC2A2731}</Project>
+      <Name>MessengerControlPanel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MessengerViewer\MessengerViewer.csproj">
+      <Project>{6B584DEE-CBD1-45C2-9A01-81DB4C7A5B2A}</Project>
+      <Name>MessengerViewer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

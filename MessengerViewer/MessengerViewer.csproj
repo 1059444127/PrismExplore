@@ -63,6 +63,7 @@
     <Compile Include="MessengerViewer.xaml.cs">
       <DependentUpon>MessengerViewer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MessengerViewerViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
