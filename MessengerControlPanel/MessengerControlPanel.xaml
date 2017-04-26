@@ -6,6 +6,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-           <Button Content="Send Message" Command="{Binding MessengerCommand}"></Button> 
+           <Button Content="Send Message" HorizontalAlignment="Center" VerticalAlignment="Center" Command="{Binding MessengerCommand}"></Button> 
     </Grid>
 </UserControl>

@@ -1,4 +1,6 @@
 using GalaSoft.MvvmLight;
+using MessengerControlPanel;
+using MessengerViewer;
 
 namespace MessengerExpore.ViewModel
 {
@@ -29,6 +31,14 @@ namespace MessengerExpore.ViewModel
             ////{
             ////    // Code runs "for real"
             ////}
+            /// 
+            ControlPanelViewModel = new MessengerControlPanelViewModel();
+            Viewer1ViewModel = new MessengerViewerViewModel();
+            Viewer2ViewModel = new MessengerViewerViewModel();
         }
+
+        public MessengerControlPanelViewModel ControlPanelViewModel { get; private set; }
+        public MessengerViewerViewModel Viewer1ViewModel { get; private set; }
+        public MessengerViewerViewModel Viewer2ViewModel { get; private set; }
     }
 }
