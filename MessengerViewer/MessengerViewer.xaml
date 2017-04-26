@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="MessengerViewer.MessengerViewer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <DockPanel>
+        <RadioButton x:Name="SwitchButton" Content="AllowMessage" IsChecked="{Binding AllowMessage}" DockPanel.Dock="Bottom" HorizontalAlignment="Center"></RadioButton>
+        <ListBox ItemsSource="{Binding Messages}" IsEnabled="{Binding ElementName=SwitchButton, Path=IsChecked}"></ListBox>
+    </DockPanel>
+</UserControl>
