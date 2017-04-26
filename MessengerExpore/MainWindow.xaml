@@ -1,8 +1,11 @@
 ﻿<Window x:Class="MessengerExpore.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="350" Width="525"
+        DataContext="{Binding Source={StaticResource Locator}, Path=Main}">
+    <DockPanel>
+        <ContentControl DockPanel.Dock="Left" Content="{Binding ControlPanelViewModel}"></ContentControl>
+        <ContentControl DockPanel.Dock="Top" Content="{Binding Viewer1ViewModel}"></ContentControl>
+        <ContentControl DockPanel.Dock="Bottom" Content="{Binding Viewer2ViewModel}"></ContentControl>
+    </DockPanel>
 </Window>
