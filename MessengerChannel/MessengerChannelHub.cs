@@ -1,4 +1,7 @@
-﻿namespace MessengerChannel
+﻿using System.Collections;
+using System.Collections.Generic;
+
+namespace MessengerChannel
 {
     public class MessengerChannelHub
     {
@@ -17,5 +20,16 @@
         }
 
         #endregion
+
+        private IList<object> _tokens = new List<object>();
+
+        public object RequestToken()
+        {
+            var token = new object();
+            _tokens.Add(token);
+            
+            //TODO: publish tokens
+
+        }
     }
 }

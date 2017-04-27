@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessengerViewer", "Messenge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessengerChannel", "MessengerChannel\MessengerChannel.csproj", "{985D702A-47BA-4319-B7CB-6DCE971CADBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrerequisiteImportExplore", "PrerequisiteImportExplore\PrerequisiteImportExplore.csproj", "{3BEF9DCC-C4AE-41EB-9590-96AA96CD3269}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = PrismExplore.vsmdi
@@ -107,6 +109,16 @@ Global
 		{985D702A-47BA-4319-B7CB-6DCE971CADBE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{985D702A-47BA-4319-B7CB-6DCE971CADBE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{985D702A-47BA-4319-B7CB-6DCE971CADBE}.Release|x86.ActiveCfg = Release|Any CPU
+		{3BEF9DCC-C4AE-41EB-9590-96AA96CD3269}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{3BEF9DCC-C4AE-41EB-9590-96AA96CD3269}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{3BEF9DCC-C4AE-41EB-9590-96AA96CD3269}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{3BEF9DCC-C4AE-41EB-9590-96AA96CD3269}.Debug|x86.ActiveCfg = Debug|x86
+		{3BEF9DCC-C4AE-41EB-9590-96AA96CD3269}.Debug|x86.Build.0 = Debug|x86
+		{3BEF9DCC-C4AE-41EB-9590-96AA96CD3269}.Release|Any CPU.ActiveCfg = Release|x86
+		{3BEF9DCC-C4AE-41EB-9590-96AA96CD3269}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{3BEF9DCC-C4AE-41EB-9590-96AA96CD3269}.Release|Mixed Platforms.Build.0 = Release|x86
+		{3BEF9DCC-C4AE-41EB-9590-96AA96CD3269}.Release|x86.ActiveCfg = Release|x86
+		{3BEF9DCC-C4AE-41EB-9590-96AA96CD3269}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
