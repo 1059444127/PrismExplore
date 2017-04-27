@@ -22,7 +22,10 @@ namespace MultiInstanceImportExplore
         static void Main(string[] args)
         {
             var p = new Program();
-            Console.WriteLine("There are {0} views", p.GetViewCount());
+            var viewCount = p.GetViewCount();
+            //var viewTool = new LayoutTool();
+            //var viewCount = viewTool.GetViewCount();
+            Console.WriteLine("There are {0} views", viewCount);
         }
 
         private int GetViewCount()
