@@ -1,7 +1,15 @@
-﻿namespace MultiInstanceImportExplore
+﻿using System.ComponentModel.Composition;
+
+namespace MultiInstanceImportExplore
 {
-    public class View
+    [Export(typeof(IView)), PartCreationPolicy(CreationPolicy.NonShared)]
+    public class View : IView
     {
-         
+        [Import] private IController _controller;
+
+        public View()
+        {
+            
+        }
     }
 }

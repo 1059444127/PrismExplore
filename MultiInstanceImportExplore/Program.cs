@@ -19,6 +19,7 @@ namespace MultiInstanceImportExplore
 
         static void Main(string[] args)
         {
+            new Program();
         }
     }
 }
