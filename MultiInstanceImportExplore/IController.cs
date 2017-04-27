@@ -2,5 +2,6 @@
 {
     interface IController
     {
+        void Register(IView view);
     }
 }
