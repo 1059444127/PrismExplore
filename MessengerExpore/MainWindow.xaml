@@ -3,8 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525"
         DataContext="{Binding Source={StaticResource Locator}, Path=Main}">
-    <Grid>
-        <Grid.ColumnDefinitions>
+        DataContext="{Binding Source={StaticResource Locator}, Path=Main}">
+        
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
@@ -15,5 +15,8 @@
         <ContentControl Content="{Binding ControlPanelViewModel}" Grid.RowSpan="2"></ContentControl>
         <ContentControl Content="{Binding Viewer1ViewModel}" Grid.Column="1" Grid.Row="0"></ContentControl>
         <ContentControl Content="{Binding Viewer2ViewModel}" Grid.Column="1" Grid.Row="1"></ContentControl>
-    </Grid>
+        <ContentControl DockPanel.Dock="Left" Content="{Binding ControlPanelViewModel}"></ContentControl>
+        <ContentControl DockPanel.Dock="Top" Content="{Binding Viewer1ViewModel}"></ContentControl>
+        <ContentControl DockPanel.Dock="Bottom" Content="{Binding Viewer2ViewModel}"></ContentControl>
+    </DockPanel>
 </Window>
