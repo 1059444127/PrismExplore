@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessengerControlPanel", "Me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessengerViewer", "MessengerViewer\MessengerViewer.csproj", "{6B584DEE-CBD1-45C2-9A01-81DB4C7A5B2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessengerChannel", "MessengerChannel\MessengerChannel.csproj", "{985D702A-47BA-4319-B7CB-6DCE971CADBE}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = PrismExplore.vsmdi
@@ -95,6 +97,16 @@ Global
 		{6B584DEE-CBD1-45C2-9A01-81DB4C7A5B2A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{6B584DEE-CBD1-45C2-9A01-81DB4C7A5B2A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{6B584DEE-CBD1-45C2-9A01-81DB4C7A5B2A}.Release|x86.ActiveCfg = Release|Any CPU
+		{985D702A-47BA-4319-B7CB-6DCE971CADBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{985D702A-47BA-4319-B7CB-6DCE971CADBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{985D702A-47BA-4319-B7CB-6DCE971CADBE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{985D702A-47BA-4319-B7CB-6DCE971CADBE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{985D702A-47BA-4319-B7CB-6DCE971CADBE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{985D702A-47BA-4319-B7CB-6DCE971CADBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{985D702A-47BA-4319-B7CB-6DCE971CADBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{985D702A-47BA-4319-B7CB-6DCE971CADBE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{985D702A-47BA-4319-B7CB-6DCE971CADBE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{985D702A-47BA-4319-B7CB-6DCE971CADBE}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,5 +115,6 @@ Global
 		{347D2B8C-F3CC-4A62-BA4B-C4144A1E4295} = {FBD18135-C80B-48EC-AD78-432D7417EA2A}
 		{0C0F05C3-755F-419E-A938-2D51FC2A2731} = {FBD18135-C80B-48EC-AD78-432D7417EA2A}
 		{6B584DEE-CBD1-45C2-9A01-81DB4C7A5B2A} = {FBD18135-C80B-48EC-AD78-432D7417EA2A}
+		{985D702A-47BA-4319-B7CB-6DCE971CADBE} = {FBD18135-C80B-48EC-AD78-432D7417EA2A}
 	EndGlobalSection
 EndGlobal
