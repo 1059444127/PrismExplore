@@ -5,6 +5,10 @@ namespace MessengerViewer
 {
     public class MessengerViewerViewModel : ViewModelBase
     {
+        public MessengerViewerViewModel()
+        {
+        }
+        
         #region [--AllowMessage--]
 
         private bool _allowMessage = true;
