@@ -1,0 +1,6 @@
+﻿namespace MultiInstanceImportExplore
+{
+    interface IController
+    {
+    }
+}
