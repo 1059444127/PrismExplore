@@ -7,6 +7,7 @@ namespace MultiInstanceImportExplore
     [Export(typeof(IController))]
     public class Controller : IController
     {
+        [Export]
         private readonly IList<IView> _views = new List<IView>();
 
         public Controller()

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.Composition;
+﻿using System;
+using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
 using System.Reflection;
 
@@ -9,6 +10,7 @@ namespace MultiInstanceImportExplore
         [Import] private IController _controller;
         [Import] private IView _view1;
         [Import] private IView _view2;
+        [Import] private ViewTool _viewTool;
 
         public Program()
         {
@@ -19,7 +21,13 @@ namespace MultiInstanceImportExplore
 
         static void Main(string[] args)
         {
-            new Program();
+            var p = new Program();
+            Console.WriteLine("There are {0} views", p.GetViewCount());
+        }
+
+        private int GetViewCount()
+        {
+            return _viewTool.GetViewCount();
         }
     }
 }

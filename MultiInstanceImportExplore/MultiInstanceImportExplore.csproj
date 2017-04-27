@@ -42,6 +42,8 @@
     <Compile Include="Controller.cs" />
     <Compile Include="IController.cs" />
     <Compile Include="IView.cs" />
+    <Compile Include="LayoutTool.cs" />
+    <Compile Include="ViewerTool.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View.cs" />
