@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exporters", "Exporters\Expo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Importers", "Importers\Importers.csproj", "{FF285803-FAE1-4664-8C5B-FE23442C72C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{05C96EC5-CF3B-42D4-80BF-783A30CB2034}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = PrismExplore.vsmdi
@@ -181,6 +183,16 @@ Global
 		{FF285803-FAE1-4664-8C5B-FE23442C72C3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{FF285803-FAE1-4664-8C5B-FE23442C72C3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{FF285803-FAE1-4664-8C5B-FE23442C72C3}.Release|x86.ActiveCfg = Release|Any CPU
+		{05C96EC5-CF3B-42D4-80BF-783A30CB2034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05C96EC5-CF3B-42D4-80BF-783A30CB2034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05C96EC5-CF3B-42D4-80BF-783A30CB2034}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{05C96EC5-CF3B-42D4-80BF-783A30CB2034}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{05C96EC5-CF3B-42D4-80BF-783A30CB2034}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{05C96EC5-CF3B-42D4-80BF-783A30CB2034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05C96EC5-CF3B-42D4-80BF-783A30CB2034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05C96EC5-CF3B-42D4-80BF-783A30CB2034}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{05C96EC5-CF3B-42D4-80BF-783A30CB2034}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{05C96EC5-CF3B-42D4-80BF-783A30CB2034}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -193,5 +205,6 @@ Global
 		{B3E6758E-727F-4E15-81DE-D35BF9F0897C} = {1BDD597C-156E-4DCE-9FAA-10B95BB96591}
 		{DEBD20CD-FD06-48E8-84CB-4BB1CCF63757} = {1BDD597C-156E-4DCE-9FAA-10B95BB96591}
 		{FF285803-FAE1-4664-8C5B-FE23442C72C3} = {1BDD597C-156E-4DCE-9FAA-10B95BB96591}
+		{05C96EC5-CF3B-42D4-80BF-783A30CB2034} = {1BDD597C-156E-4DCE-9FAA-10B95BB96591}
 	EndGlobalSection
 EndGlobal
