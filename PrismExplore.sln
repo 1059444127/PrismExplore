@@ -30,6 +30,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiInstanceImportExplore"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportInheritanceExplore", "ExportInheritanceExplore\ExportInheritanceExplore.csproj", "{D9982492-2128-4817-B714-18A5B2C34680}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompositionExplore", "CompositionExplore", "{1BDD597C-156E-4DCE-9FAA-10B95BB96591}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositionExplore", "CompositionExplore\CompositionExplore.csproj", "{B3E6758E-727F-4E15-81DE-D35BF9F0897C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exporters", "Exporters\Exporters.csproj", "{DEBD20CD-FD06-48E8-84CB-4BB1CCF63757}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Importers", "Importers\Importers.csproj", "{FF285803-FAE1-4664-8C5B-FE23442C72C3}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = PrismExplore.vsmdi
@@ -143,6 +151,36 @@ Global
 		{D9982492-2128-4817-B714-18A5B2C34680}.Release|Mixed Platforms.Build.0 = Release|x86
 		{D9982492-2128-4817-B714-18A5B2C34680}.Release|x86.ActiveCfg = Release|x86
 		{D9982492-2128-4817-B714-18A5B2C34680}.Release|x86.Build.0 = Release|x86
+		{B3E6758E-727F-4E15-81DE-D35BF9F0897C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{B3E6758E-727F-4E15-81DE-D35BF9F0897C}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{B3E6758E-727F-4E15-81DE-D35BF9F0897C}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{B3E6758E-727F-4E15-81DE-D35BF9F0897C}.Debug|x86.ActiveCfg = Debug|x86
+		{B3E6758E-727F-4E15-81DE-D35BF9F0897C}.Debug|x86.Build.0 = Debug|x86
+		{B3E6758E-727F-4E15-81DE-D35BF9F0897C}.Release|Any CPU.ActiveCfg = Release|x86
+		{B3E6758E-727F-4E15-81DE-D35BF9F0897C}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{B3E6758E-727F-4E15-81DE-D35BF9F0897C}.Release|Mixed Platforms.Build.0 = Release|x86
+		{B3E6758E-727F-4E15-81DE-D35BF9F0897C}.Release|x86.ActiveCfg = Release|x86
+		{B3E6758E-727F-4E15-81DE-D35BF9F0897C}.Release|x86.Build.0 = Release|x86
+		{DEBD20CD-FD06-48E8-84CB-4BB1CCF63757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEBD20CD-FD06-48E8-84CB-4BB1CCF63757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEBD20CD-FD06-48E8-84CB-4BB1CCF63757}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DEBD20CD-FD06-48E8-84CB-4BB1CCF63757}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DEBD20CD-FD06-48E8-84CB-4BB1CCF63757}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DEBD20CD-FD06-48E8-84CB-4BB1CCF63757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEBD20CD-FD06-48E8-84CB-4BB1CCF63757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEBD20CD-FD06-48E8-84CB-4BB1CCF63757}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DEBD20CD-FD06-48E8-84CB-4BB1CCF63757}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DEBD20CD-FD06-48E8-84CB-4BB1CCF63757}.Release|x86.ActiveCfg = Release|Any CPU
+		{FF285803-FAE1-4664-8C5B-FE23442C72C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF285803-FAE1-4664-8C5B-FE23442C72C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF285803-FAE1-4664-8C5B-FE23442C72C3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FF285803-FAE1-4664-8C5B-FE23442C72C3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FF285803-FAE1-4664-8C5B-FE23442C72C3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FF285803-FAE1-4664-8C5B-FE23442C72C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF285803-FAE1-4664-8C5B-FE23442C72C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF285803-FAE1-4664-8C5B-FE23442C72C3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{FF285803-FAE1-4664-8C5B-FE23442C72C3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{FF285803-FAE1-4664-8C5B-FE23442C72C3}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -152,5 +190,8 @@ Global
 		{0C0F05C3-755F-419E-A938-2D51FC2A2731} = {FBD18135-C80B-48EC-AD78-432D7417EA2A}
 		{6B584DEE-CBD1-45C2-9A01-81DB4C7A5B2A} = {FBD18135-C80B-48EC-AD78-432D7417EA2A}
 		{985D702A-47BA-4319-B7CB-6DCE971CADBE} = {FBD18135-C80B-48EC-AD78-432D7417EA2A}
+		{B3E6758E-727F-4E15-81DE-D35BF9F0897C} = {1BDD597C-156E-4DCE-9FAA-10B95BB96591}
+		{DEBD20CD-FD06-48E8-84CB-4BB1CCF63757} = {1BDD597C-156E-4DCE-9FAA-10B95BB96591}
+		{FF285803-FAE1-4664-8C5B-FE23442C72C3} = {1BDD597C-156E-4DCE-9FAA-10B95BB96591}
 	EndGlobalSection
 EndGlobal
